@@ -1,4 +1,5 @@
 #include<iostream>
+#include<math.h>
 
 using namespace std;
 
@@ -8,7 +9,7 @@ int main(){
 	double result;
 	cout << "введіть перше число\n";
 	cin >> a;
-	cout << "введіть оператор \n1\t+\n2\t-\n3\t*\n4\t/\n\n";
+	cout << "введіть оператор \n1\t+\n2\t-\n3\t*\n4\t/\n5\t^\n";
 	cin >> op;
 	cout << "введіть друге число\n";
 	cin >> b;
@@ -24,6 +25,9 @@ int main(){
 			break;
 		case 4:
 			result = a / b;
+			break;
+		case 5:
+			result = pow(a,b);
 			break;
 	}
 	cout << "результат: " << result;
